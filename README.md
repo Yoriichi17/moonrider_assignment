@@ -11,7 +11,6 @@ Built with **Node.js**, **Express**, **MySQL**, and **Sequelize ORM**.
 -  Identity linking using primary/secondary contact precedence
 -  Smart merging of contact chains based on overlaps
 -  Custom decoy error messages to mislead potential threats
--  Timestamps set to IST (Asia/Kolkata)
 -  Fully tested using Jest + Supertest
 
 ---
@@ -116,9 +115,9 @@ npm test
 
 Key Fields:
 - `id` (auto-incremented primary key)
-- `email` (nullable string)
-- `phoneNumber` (nullable string)
-- `linkedId` (nullable foreign key to another contact)
+- `email` ( string)
+- `phoneNumber` (string)
+- `linkedId` (foreign key to another contact)
 - `linkPrecedence` (`primary` or `secondary`)
 - `createdAt`, `updatedAt`, `deletedAt` (timestamps managed automatically)
 
