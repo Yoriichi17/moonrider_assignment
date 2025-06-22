@@ -112,20 +112,15 @@ npm test
 
 ---
 
-##  MySQL Table Schema
+##  Database Schema (via Sequelize)
 
-```sql
-CREATE TABLE contacts (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  phoneNumber VARCHAR(255),
-  email VARCHAR(255),
-  linkedId INT,
-  linkPrecedence ENUM('primary', 'secondary') NOT NULL,
-  createdAt DATETIME NOT NULL,
-  updatedAt DATETIME NOT NULL,
-  deletedAt DATETIME
-);
-```
+Key Fields:
+- `id` (auto-incremented primary key)
+- `email` (nullable string)
+- `phoneNumber` (nullable string)
+- `linkedId` (nullable foreign key to another contact)
+- `linkPrecedence` (`primary` or `secondary`)
+- `createdAt`, `updatedAt`, `deletedAt` (timestamps managed automatically)
 
 ---
 
