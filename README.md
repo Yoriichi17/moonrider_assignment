@@ -41,8 +41,8 @@ Built with **Node.js**, **Express**, **MySQL**, and **Sequelize ORM**.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/identity-reconciliation.git
-   cd identity-reconciliation
+   git clone https://github.com/Yoriichi17/moonrider_assignment.git
+   cd moonrider_assignment
    ```
 
 2. **Install dependencies**
